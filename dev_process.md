@@ -35,7 +35,18 @@ Now that you have millions of dollars at risk, you have to consider each feature
   - Include the feature request + specification
 2. Initial implementation pass
   - Get an initial implementation in place
-  - document all functions' intended behavior + inline documentation
+  - Document all functions' intended behavior ([NatSpec](https://docs.soliditylang.org/en/develop/natspec-format.html) for public/external functions) and add inline documentation/comments
+  - Any use of `unchecked` should include `safety` documentation like:
+    ```solidity
+    // Safety:
+    //  1. a + b: a and b are uint128s, and a is casted up to uint256, so a uint256(uint128) + uint128
+    //     cannot overflow
+    uint256 c;
+    unchecked {
+      c = uint256(a) + b;
+    }
+    ```
+  - **Every** line of assembly is documented/commented on
 3. Initial concrete [tests](https://book.getfoundry.sh/forge/tests.html)
   - Write an initial test for the implementation. Each write to storage should be checked, each revert should be checked. Line-by-line of the implementation, look for storage writes
   - For non-state changing functions, good practice is have a test contract that inherits the contract that does the math 
