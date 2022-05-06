@@ -39,11 +39,13 @@ Now that you have millions of dollars at risk, you have to consider each feature
   - Any use of `unchecked` should include `safety` documentation like:
     ```solidity
     // Safety:
-    //  1. a + b: a and b are uint128s, and a is casted up to uint256, so a uint256(uint128) + uint128
+    //  1. a + b: a and b are uint64s, and a is casted up to uint128, so a uint128(uint64) + uint64
     //     cannot overflow
-    uint256 c;
+    //  2. c * 2: c is casted up to uint256, so a uint256(uint128) * 2 cannot overflow
+    uint256 d;
     unchecked {
-      c = uint256(a) + b;
+      uint128 c = uint128(a) + b;
+      d = uint256(c) * 2;
     }
     ```
   - **Every** line of assembly is documented/commented on
