@@ -28,7 +28,7 @@ Make dedicated time to evaluate:
 3. What are the risks associated with this feature? Spend ample time evaluating this. Consider every module the feature may touch. Then go back through excluded modules and *ensure* they cannot be affected.
 
 Now that you have millions of dollars at risk, you have to consider each feature may put *all* of it at risk. The cost of a misstep will likely be in the millions of dollars. 
-## Implementation
+## Process
 1. Draft PR
   - Include the feature request + specification
 2. Initial implementation pass
