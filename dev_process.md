@@ -43,29 +43,31 @@ Now that you have millions of dollars at risk, you have to consider each feature
 5. Improve tests, then move back to 4 based on any found bugs
 6. [Fuzz test](https://book.getfoundry.sh/forge/fuzz-testing.html)
   - Now that you are pretty confident in your implementation, throw a monkey at it. A good fuzz test should consider all valid inputs, and include as many state transition assertions as possible (think: is this function monotonically in/decreasing, should it be always less than something else,  etc.)
-7. Move back to step 4
+7. Move back to step 4 if any bugs are found
 8. Integration test
   - Your feature now likely does exactly what you think it does. In a complex system, that is not enough. Ideally you have tested how it affects the entire system as well. Invariant tests are coming soon to [Foundry](https://github.com/foundry-rs/foundry), which should help integration style tests, but make do with what you can with fuzz tests on a broader basis (not just for a single function)
-9. Run [slither](https://github.com/crytic/slither) & implement fixes, return to step 4 if needed
-10. Cleanup documentation
-11. PR review
+9. Move back to step 4 if any bugs are found
+10. Run [slither](https://github.com/crytic/slither)
+  - Analyze the output and return to step 4 if needed
+11. Cleanup documentation
+12. PR review
   - The implementer is just the first line of defense. If you are a reviewer, confirm that the implementer followed the above principals (test-per-state-transition, test-per-revert, fuzz test, and integration test)
   - Review the documentation and ensure the implementation matches the documented behavior. If it does not, touch base with the implementer and confirm which needs to be updated.
-12. Deployment script
+13. Deployment script
   - Write the deployment script
   - Most likely Foundry has scripting ready when you are reading this. Check out this [PR](https://github.com/foundry-rs/foundry/pull/1208)
-13. Deployment test
+14. Deployment test
   - Ensure deployment goes exactly as planned by writing a test testing *every state transition* and make sure no changes unexpectedly happen. One way to accomplish this is the `record` cheatcode. Create a list of your entire protocol's addresses, call record, perform the upgrade, call `accesses` for each address of your protocol. Ensure there are no slots/addresses that unexpectedly changed.
-14. Audit
+15. Audit
   - Consider if this feature/contract needs an audit. Always lean towards being safe rather than sorry.
   - Have the complexity & code size inform if and who should audit your contracts
   - At Nascent, we have an internal tier list of quality of auditors. You should check with other developers about who are good auditors and who aren't. Some auditors are just there to check a box for a protocol, others actually care about finding vulnerabilities.
-15. Implement audit fixes
-16. Setup monitoring service
+16. Implement audit fixes
+17. Setup monitoring service
   - Have an internal tool that monitors important aspects of your system.
   - Use tools like [Check the Chain](https://github.com/fei-protocol/checkthechain), [Grafana](https://grafana.com/), or use an off-the-shelf monitoring tool like [tenderly](https://tenderly.co/alerting)
-17. Deploy
+18. Deploy
   - Congrats, you probably just crushed 99% of solidity devs in terms of a secure development +  deployment
-18. Monitor next couple hours
+19. Monitor next couple hours
   - Use the monitoring service you set up to watch carefully for unexpected behaviors and be ready to take action
-19. Relax, have a beer, you earned it.
+20. Relax, have a beer, you earned it.
