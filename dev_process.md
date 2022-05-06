@@ -46,8 +46,8 @@ Now that you have millions of dollars at risk, you have to consider each feature
 7. Move back to step 4
 8. Integration test
   - Your feature now likely does exactly what you think it does. In a complex system, that is not enough. Ideally you have tested how it affects the entire system as well. Invariant tests are coming soon to [Foundry](https://github.com/foundry-rs/foundry), which should help integration style tests, but make do with what you can with fuzz tests on a broader basis (not just for a single function)
-9. Run [slither](https://github.com/crytic/slither)
-10. Documentation cleanup
+9. Run [slither](https://github.com/crytic/slither) & implement fixes, return to step 4 if needed
+10. Cleanup documentation
 11. PR review
   - The implementer is just the first line of defense. If you are a reviewer, confirm that the implementer followed the above principals (test-per-state-transition, test-per-revert, fuzz test, and integration test)
   - Review the documentation and ensure the implementation matches the documented behavior. If it does not, touch base with the implementer and confirm which needs to be updated.
