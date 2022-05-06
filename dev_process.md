@@ -7,6 +7,12 @@ Feature Request received
      └> Evaulation (Time + complexity + risks)
         |
         └> Implementation
+           |
+           └> Test
+              |
+              └> Deployment
+                 |
+                 └> Monitor
 ```
 ## Specification
 Make note of the kinds of variables that affect the feature:
@@ -37,7 +43,7 @@ Now that you have millions of dollars at risk, you have to consider each feature
 7. integration test
   - Your feature now likely does exactly what you think it does. In a complex system, that is not enough. Ideally you have tested how it affects the entire system as well. Invariant tests are coming soon to foundry, which should help integration style tests, but make do with what you can with fuzz tests on a broader basis (not just for a single function)
 8. pr review
-  - The implementer is just the first line of defence. If you are a reviewer, confirm that the implementer followed the above principals (test-per-state-transition, test-per-revert, fuzz test, and integration test)
+  - The implementer is just the first line of defense. If you are a reviewer, confirm that the implementer followed the above principals (test-per-state-transition, test-per-revert, fuzz test, and integration test)
 9. deployment script
   - Write the deployment script
 10. deployment test
