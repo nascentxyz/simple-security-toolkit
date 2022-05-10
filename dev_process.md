@@ -80,7 +80,7 @@ Now that you have millions of dollars at risk, you have to consider each feature
   - Have an internal tool that monitors important aspects of your system.
   - Use tools like [Check the Chain](https://github.com/fei-protocol/checkthechain), [Grafana](https://grafana.com/), or use an off-the-shelf monitoring tool like [tenderly](https://tenderly.co/alerting)
 18. Deploy
-  - Congrats, you probably just crushed 99% of solidity devs in terms of a secure development +  deployment
+  - Congrats, you probably just crushed 99% of Solidity devs in terms of a secure development + deployment
 19. Monitor next couple hours
   - Use the monitoring service you set up to watch carefully for unexpected behaviors and be ready to take action
 20. Relax, have a beer, you earned it.
