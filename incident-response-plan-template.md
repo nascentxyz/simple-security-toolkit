@@ -17,7 +17,7 @@ War Room Participants: **[*Names and contact info*]**
         - [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
         - [Foundry Debugger](https://book.getfoundry.sh/forge/debugger.html?highlight=debugger#debugger)
         - [ethtx.info](https://ethtx.info)
-- [ ]  Pause contracts (if possible) or take other defensive action - **[*Person responsible for coordinating*]**
+- [ ]  Pause contracts or take other defensive action - **[*Person responsible for coordinating*]**
     - Steps:
         - **[*Who, how, what addresses*]**
     - Review Transaction(s) - **[*Person responsible*]**
