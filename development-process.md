@@ -85,7 +85,7 @@ You may have millions of dollars at risk already, or will after launch. As such,
 17. Setup monitoring service
   - Have an internal tool that monitors important aspects of your system.
   - Use tools like [Check the Chain](https://github.com/fei-protocol/checkthechain) + [Grafana](https://grafana.com/), or use an off-the-shelf monitoring tool like [Tenderly](https://tenderly.co/alerting) or OpenZeppelin's [Defender Sentinels](https://www.openzeppelin.com/defender).
-18. Prepare/update [Incident Response Plan](https://github.com/nascentxyz/simple-security-toolkit/incident-response-plan-template.md)
+18. Prepare/update your [Incident Response Plan](https://github.com/nascentxyz/simple-security-toolkit/incident-response-plan-template.md)
 19. Deploy the contract(s)
   - Congrats, you probably just crushed 99% of Solidity devs in terms of a secure development + deployment
 
