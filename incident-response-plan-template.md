@@ -1,16 +1,20 @@
-# *CONFIDENTIAL - DO NOT SHARE*
+
 
 # **[*Project Name*]** Incident Response Plan
 
+## *CONFIDENTIAL - DO NOT SHARE*
+Do not share this with anyone who does not need to be in the know.
 <!--
 Bold + Italics + Square Brackets: Fields to be filled in
 -->
+
+## Communication
 
 War Room Channel(s): **[Discord channel, Signal group, Zoom, etc.]**
 
 War Room Participants: **[*Names and contact info*]**
 
-### Immediate Steps
+## Immediate Steps
 
 - [ ]  Review exploit transactions to identify vulnerability - **[*Person responsible*]**
     - Tools used:
@@ -37,7 +41,7 @@ War Room Participants: **[*Names and contact info*]**
         - Even if nothing new is known, updates every 4 to 12 hours will help reassure your community that you are working to address the situation
         - Run all messages by the vulnerability reviewer(s) to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
 
-### After Immediate Steps Are Addressed
+## After Immediate Steps Are Addressed
 
 - [ ]  Draft and post full public postmortem
 - [ ]  Prepare and deploy patch for contracts, ideally following [development process](development-process.md) guidelines
