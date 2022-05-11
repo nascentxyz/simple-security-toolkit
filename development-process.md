@@ -1,5 +1,5 @@
 # Development Process
-One of the most crucial factors in having a secure codebase is a solid development process. "An ounce of prevention is worth a pound of cure". This document gives an *example* development process that we, at Nascent, have found works well. In addition to getting better overall code quality, this process serves as a companion to our [audit readiness checklist](https://github.com/nascentxyz/nascent-security/blob/main/audit-readiness-checklist.md). If you follow the below process, you should naturally check off most of the items on the checklist.
+One of the most crucial factors in having a secure codebase is a solid development process. "An ounce of prevention is worth a pound of cure". This document gives an *example* development process that we, at Nascent, have found works well. In addition to getting better overall code quality, this process serves as a companion to our [audit readiness checklist](audit-readiness-checklist.md). If you follow the below process, you should naturally check off most of the items on the checklist.
 
 ```
 Feature Request received
@@ -85,7 +85,7 @@ You may have millions of dollars at risk already, or will after launch. As such,
 17. Setup monitoring service
   - Have an internal tool that monitors important aspects of your system.
   - Use tools like [Check the Chain](https://github.com/fei-protocol/checkthechain) + [Grafana](https://grafana.com/), or use an off-the-shelf monitoring tool like [Tenderly](https://tenderly.co/alerting) or OpenZeppelin's [Defender Sentinels](https://www.openzeppelin.com/defender).
-18. Prepare/update your [Incident Response Plan](https://github.com/nascentxyz/simple-security-toolkit/incident-response-plan-template.md)
+18. Prepare/update your [Incident Response Plan](incident-response-plan-template.md)
 19. Deploy the contract(s)
   - Congrats, you probably just crushed 99% of Solidity devs in terms of a secure development + deployment
 
