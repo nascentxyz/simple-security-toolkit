@@ -18,3 +18,10 @@ Before deploying your code to mainnet, complete this checklist to make sure you 
 4. **[Incident Response Plan Template](https://github.com/nascentxyz/simple-security-toolkit/blob/main/incident-response-plan-template.md)**
 
 No project ever expects to have a security incident. Having a plan documented in advance can help your team respond swiftly and calmly in the heat of the moment when adrenaline is running high.
+
+
+### Contributing
+
+Thanks for your interest in contributing! We are *very* opinionated as to what gets added to this repository. However, we are open to outside contributors putting forth suggestions and encourage you to do so. If you have ideas for a new document, it is likely best to open an issue before starting on a PR to gauge our support. If you have suggestions to existing documents, you can open a PR right away.
+
+Feel free to fork this repo and make it your own. Share your ideas with your team and iterate. If you find things that may be useful to a broader set of teams, consider opening a PR!

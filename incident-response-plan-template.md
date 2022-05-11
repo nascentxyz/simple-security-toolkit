@@ -17,11 +17,12 @@ War Room Participants: **[*Names and contact info*]**
         - [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
         - [Foundry Debugger](https://book.getfoundry.sh/forge/debugger.html?highlight=debugger#debugger)
         - [ethtx.info](https://ethtx.info)
-- [ ]  Pause contracts - **[*Person responsible for coordinating*]**
+- [ ]  Pause contracts or take other defensive action - **[*Person responsible for coordinating*]**
     - Steps:
         - **[*Who, how, what addresses*]**
+    - Review Transaction(s) - **[*Person responsible*]**
     - You do NOT want to be scrambling to figure out who can sign to take defensive actions. Use of [OpenZeppelin Defender](https://www.openzeppelin.com/defender) is highly recommended, as is having prepared defensive action scripts in advance that can be deployed as per the [Pre-Launch Security Checklist](https://github.com/nascentxyz/simple-security-toolkit/blob/main/pre-launch-security-checklist.md).
-- [ ]  Review all contracts to identify knockon vulnerabilities. Pause those as necessary - **[*Person responsible*]**
+- [ ]  Review all contracts to identify knock-on vulnerabilities. Pause those as necessary - **[*Person responsible*]**
 - [ ]  Update UI to reflect current status - **[*Person responsible*]**
 - [ ]  Contact security partners - **[*Person responsible*]**
     - **[*List of past auditors and their contact info or location of shared channel*]**
@@ -38,7 +39,7 @@ War Room Participants: **[*Names and contact info*]**
 
 ### After Immediate Steps Are Addressed
 
-- [ ]  Draft and post full public post-mortem
+- [ ]  Draft and post full public postmortem
 - [ ]  Prepare and deploy patch for contracts, ideally following [development process](development-process.md) guidelines
     - [ ]  Have it reviewed and signed off on by past auditors
     - [ ]  Have it reviewed by as many trusted members of the team and community as possible
