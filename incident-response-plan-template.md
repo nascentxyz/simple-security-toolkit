@@ -37,7 +37,7 @@ War Room Participants: **[*Names and contact info*]**
 ### After Immediate Steps Are Addressed
 
 - [ ]  Draft and post full public post-mortem
-- [ ]  Prepare and deploy patch for contracts, ideally following [development process](https://github.com/nascentxyz/simple-security-toolkit/development-process.md) guidelines
+- [ ]  Prepare and deploy patch for contracts, ideally following [development process](development-process.md) guidelines
     - [ ]  Have it reviewed and signed off on by past auditors
     - [ ]  Have it reviewed by as many trusted members of the team and community as possible
     - [ ]  If the patch or potential interactions are complex enough to warrant it, strongly consider a short [Code4rena](https://code4rena.com/) contest (can be started within 48 hours)
