@@ -2,11 +2,11 @@
 One of the most crucial factors in having a secure codebase is a solid development process. "An ounce of prevention is worth a pound of cure". This document gives an *example* development process that we, at Nascent, have found works well. In addition to getting better overall code quality, this process serves as a companion to our [audit readiness checklist](audit-readiness-checklist.md). If you follow the below process, you should naturally check off most of the items on the checklist.
 
 ```
-Feature Request received
+Feature request received
  |
- └> Specification Write up
+ └> Specification write up
      |
-     └> Evaluation (Time + complexity + risks)
+     └> Evaluation (time + complexity + risks)
         |
         └> Implementation
            |
