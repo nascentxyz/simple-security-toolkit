@@ -2,19 +2,19 @@
 One of the most crucial factors in having a secure codebase is a solid development process. "An ounce of prevention is worth a pound of cure". This document gives an *example* development process that we, at Nascent, have found works well. In addition to getting better overall code quality, this process serves as a companion to our [audit readiness checklist](audit-readiness-checklist.md). If you follow the below process, you should naturally check off most of the items on the checklist.
 
 ```
-Feature Request received
+Feature Request
  |
- └> Specification Write up
+ └> Specification
      |
-     └> Evaluation (Time + complexity + risks)
+     └> Evaluation (time + complexity + risks)
         |
         └> Implementation
            |
-           └> Test
+           └> Testing
               |
               └> Deployment
                  |
-                 └> Monitor
+                 └> Monitoring
 ```
 ## Specification
 Make note of the kinds of variables that affect the feature:
@@ -23,7 +23,7 @@ Make note of the kinds of variables that affect the feature:
 3. Other protocols?
 4. Existing state?
 
-## Note on Evaluation
+## Evaluation
 Make dedicated time to evaluate:
 1. How long will this realistically take? Without specification most estimates will be wrong.
 2. Is the specification overly complex? Complexity leads to bugs and worse overall code
@@ -89,7 +89,7 @@ You may have millions of dollars at risk already, or will after launch. As such,
 19. Deploy the contract(s)
   - Congrats, you probably just crushed 99% of Solidity devs in terms of a secure development + deployment
 
-## Monitor
+## Monitoring
 20. Monitor next couple hours
   - Use the monitoring service you set up to watch carefully for unexpected behaviors and be ready to take action
 21. Relax, have a beer, you earned it.
