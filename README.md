@@ -1,5 +1,5 @@
 # Simple Security Toolkit
-This repo is a collection of practical security-focused tips and resources for smart contract development, assembled by the [Nascent](https://www.nascent.xyz/) team to share with our portfolio companies and others in the ecosystem who might find it useful. It is not intended to be comprehensive; it skews towards practical and opinionated recommendations that we find to be appropriate particularly to teams developing and managing early versions of a protocol.
+This repo is a collection of practical security-focused tips and resources for smart contract development, assembled by the [Nascent](https://www.nascent.xyz/) team to share with our portfolio companies and others in the ecosystem who might find it useful. It is not intended to be comprehensive; it skews towards practical and opinionated recommendations that we find to be appropriate particularly for teams developing and managing early versions of a protocol.
 
 ### Contents
 
