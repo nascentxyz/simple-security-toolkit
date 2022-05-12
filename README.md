@@ -5,7 +5,7 @@ This repo is a collection of practical tips and resources developed by the Nasce
 
 1. **[Development Process](https://github.com/nascentxyz/simple-security-toolkit/blob/main/development-process.md)**
 
-One of the most crucial factors in having a secure codebase is a solid development process. "An ounce of prevention is worth a pound of cure". This document gives an example development process that we, at Nascent, have found works well. It walks through the steps from initial design and feature requests -> specification -> evaluation -> implementation -> testing -> deployment -> monitoring.
+One of the most crucial factors in having a secure codebase is a solid development process: "an ounce of prevention is worth a pound of cure." This document gives an example development process that we, at Nascent, have found works well. It walks through the steps from initial design and feature requests -> specification -> evaluation -> implementation -> testing -> deployment -> monitoring.
 
 2. **[Audit Readiness Checklist](https://github.com/nascentxyz/simple-security-toolkit/blob/main/audit-readiness-checklist.md)**
 
