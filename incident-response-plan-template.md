@@ -10,7 +10,7 @@ Bold + Italics + Square Brackets: Fields to be filled in
 
 ## Communication
 
-War Room Channel(s): **[Discord channel, Signal group, Zoom, etc.]**
+War Room Channel(s): **[*Discord channel, Signal group, Zoom, etc.*]**
 
 War Room Participants: **[*Names and contact info*]**
 
