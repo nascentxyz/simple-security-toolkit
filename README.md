@@ -13,7 +13,7 @@ Audits are expensive, time consuming, and need to be scheduled months in advance
 
 3. **[Pre-Launch Security Checklist](https://github.com/nascentxyz/simple-security-toolkit/blob/main/pre-launch-security-checklist.md)**
 
-Before deploying your code to mainnet, complete this checklist to make sure you have taken the necessary steps to enable reporting and responding to potential bug reports or security incidents.
+Before deploying your code to mainnet, complete this checklist to make sure you have taken the necessary steps to enable reporting and responding to potential bugs or security incidents.
 
 4. **[Incident Response Plan Template](https://github.com/nascentxyz/simple-security-toolkit/blob/main/incident-response-plan-template.md)**
 
