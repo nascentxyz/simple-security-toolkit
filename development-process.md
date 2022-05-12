@@ -1,5 +1,5 @@
 # Development Process
-One of the most crucial factors in having a secure codebase is a solid development process: "an ounce of prevention is worth a pound of cure." This document gives an *example* development process that we, at Nascent, have found works well. In addition to getting better overall code quality, this process serves as a companion to our [audit readiness checklist](audit-readiness-checklist.md). If you follow the below process, you should naturally check off most of the items on the checklist.
+One of the most crucial factors in having a secure codebase is a solid development process: "an ounce of prevention is worth a pound of cure." This document gives an *example* development process that we, at [Nascent](https://www.nascent.xyz), have found works well. In addition to getting better overall code quality, this process serves as a companion to our [audit readiness checklist](audit-readiness-checklist.md). If you follow the below process, you should naturally check off most of the items on the checklist.
 
 ```
 Feature Request
