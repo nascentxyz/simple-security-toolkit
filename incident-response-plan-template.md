@@ -18,13 +18,13 @@ War Room Participants: **[*Names and contact info*]**
 
 - [ ]  Review exploit transactions to identify vulnerability - **[*Person responsible*]**
     - Tools used:
+        - [Foundry Transaction Replay Trace/Debugger](https://book.getfoundry.sh/reference/cast/cast-run.html#cast-run)
         - [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
-        - [Foundry Debugger](https://book.getfoundry.sh/forge/debugger.html?highlight=debugger#debugger)
         - [ethtx.info](https://ethtx.info)
-- [ ]  Pause contracts or take other defensive action - **[*Person responsible for coordinating*]**
+- [ ]  Pause contracts (if possible), take other defensive action, consider offensive action (i.e. whitehat rescues) - **[*Person responsible for coordinating*]**
     - Steps:
         - **[*Who, how, what addresses*]**
-    - Review Transaction(s) - **[*Person responsible*]**
+    - Review Transaction(s) - **[*Person responsible, **should be different than whoever created the transaction***]**
     - You do NOT want to be scrambling to figure out who can sign to take defensive actions. Use of [OpenZeppelin Defender](https://www.openzeppelin.com/defender) is highly recommended, as is having prepared defensive action scripts in advance that can be deployed as per the [Pre-Launch Security Checklist](https://github.com/nascentxyz/simple-security-toolkit/blob/main/pre-launch-security-checklist.md).
 - [ ]  Review all contracts to identify knock-on vulnerabilities. Pause those as necessary - **[*Person responsible*]**
 - [ ]  Update UI to reflect current status - **[*Person responsible*]**
