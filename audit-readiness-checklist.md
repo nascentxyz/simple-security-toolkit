@@ -2,7 +2,7 @@
 
 ### Bare minimum quality checklist
 
-- [ ]  Use the [latest][stable](https://docs.soliditylang.org/en/latest/) major version of Solidity.
+- [ ]  Use the [latest](https://docs.soliditylang.org/en/latest/) stable major version of Solidity.
 - [ ]  Use known/established libraries where possible. [OpenZeppelin contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/) are preferred because they prioritize security above all else, and most auditors are already familiar with them. [Solmate contracts](https://github.com/Rari-Capital/solmate) can be a good alternative for functions where gas optimization is paramount.
 - [ ]  Contracts compile without any errors or warnings from the compiler.
 - [ ]  Document all functions. Use [NatSpec documentation](https://docs.soliditylang.org/en/develop/natspec-format.html) for `public`/`external` functions. Consider this part of the public interface of the contract.
