@@ -16,23 +16,23 @@ War Room Participants: **[*Names and contact info*]**
 
 ## Immediate Steps
 
-- [ ] Review exploit transactions to identify vulnerability - **[*Person responsible*]**
+- [ ] **Review exploit** transactions to identify vulnerability - **[*Person responsible*]**
   - Tools used:
     - [Foundry Transaction Replay Trace/Debugger](https://book.getfoundry.sh/reference/cast/cast-run.html#cast-run)
     - [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
     - [ethtx.info](https://ethtx.info)
-- [ ] Pause contracts (if possible), take other defensive action, consider offensive action (i.e. whitehat rescues) - **[*Person responsible for coordinating*]**
+- [ ] **Pause contracts** (if possible), take other defensive action, consider offensive action (i.e. whitehat rescues) - **[*Person responsible for coordinating*]**
   - Steps:
     - **[*Who, how, what addresses*]**
   - Review Transaction(s) - **[\*Person responsible, **should be different than whoever created the transaction**\*]**
   - You do NOT want to be scrambling to figure out who can sign to take defensive actions. Use of [OpenZeppelin Defender](https://www.openzeppelin.com/defender) is highly recommended, as is having prepared defensive action scripts in advance that can be deployed as per the [Pre-Launch Security Checklist](https://github.com/nascentxyz/simple-security-toolkit/blob/main/pre-launch-security-checklist.md).
-- [ ] Review all contracts to identify knock-on vulnerabilities. Pause those as necessary - **[*Person responsible*]**
-- [ ] Update UI to reflect current status - **[*Person responsible*]**
-- [ ] Contact security partners - **[*Person responsible*]**
+- [ ] **Review all contracts** to identify knock-on vulnerabilities. Pause those as necessary - **[*Person responsible*]**
+- [ ] **Update UI** to reflect current status - **[*Person responsible*]**
+- [ ] **Contact security partners** - **[*Person responsible*]**
   - **[*List of past auditors and their contact info or location of shared channel*]**
     - Your auditors will want to assist to the extent they are able, even if primarily to protect their own reputations
   - DO NOT LET ANYONE OUTSIDE OF YOUR CIRCLE OF TRUST INTO THE WAR ROOM
-- [ ] Notify users via relevant Social Media communication channels such as Discord, Twitter, Telegram... - **[*Person responsible*]**
+- [ ] **Notify users** via relevant Social Media communication channels such as Discord, Twitter, Telegram... - **[*Person responsible*]**
   - Update regularly as meaningful new information or developments are available
     - Even if nothing new is known, updates every 4 to 12 hours will help reassure your community that you are working to address the situation
     - Run all messages by the vulnerability reviewer(s) to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
