@@ -64,7 +64,7 @@ You may have millions of dollars at risk already, or will after launch. As such,
   - Now that you are pretty confident in your implementation, throw a monkey at it. A good fuzz test should consider all valid inputs, and include as many state transition assertions as possible (think: is this function monotonically in/decreasing, should it be always less than something else,  etc.)
 8. Move back to step 4 if any bugs are found
 9. Write integration tests
-  - Your feature now likely does exactly what you think it does. In a complex system, that is not enough. Ideally you have tested how it affects the entire system as well. Invariant tests are coming soon to [Foundry](https://github.com/foundry-rs/foundry), which should help integration style tests, but make do with what you can with fuzz tests on a broader basis (not just for a single function)
+  - Your feature now likely does exactly what you think it does. In a complex system, that is not enough. Ideally you have tested how it affects the entire system as well. Stateful testing with [Foundry](https://github.com/foundry-rs/foundry) and [Echidna](https://github.com/crytic/echidna) allows you to test system-wide invariants.
 10. Move back to step 4 if any bugs are found
 11. Cleanup documentation
 12. Setup CI
@@ -74,13 +74,12 @@ You may have millions of dollars at risk already, or will after launch. As such,
   - The implementer is just the first line of defense. If you are a reviewer, confirm that the implementer followed the above principals (test-per-state-transition, test-per-revert, fuzz test, and integration test)
   - Review the documentation and ensure the implementation matches the documented behavior. If it does not, touch base with the implementer and confirm which needs to be updated
   - Ensure CI passes
-  - Check common missteps ([reentrancy, checks-effects-interactions pattern, etc](https://docs.soliditylang.org/en/v0.8.13/security-considerations.html#pitfalls))
+  - Check common missteps ([reentrancy, checks-effects-interactions pattern, etc](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls))
 
 
 ## Deployment
 14. Write a deployment script
-  - Write the deployment script
-  - Most likely Foundry has scripting ready when you are reading this. Check out this [PR](https://github.com/foundry-rs/foundry/pull/1208)
+  - Foundry has a [scripting guide](https://book.getfoundry.sh/tutorials/solidity-scripting) to test your deployment on local forks.
 15. Write a deployment test
   - Ensure deployment goes exactly as planned by writing a test testing *every state transition* and make sure no changes unexpectedly happen. One way to accomplish this is the `record` cheatcode. If performing an upgrade to an existing protocol, create a list of your entire protocol's addresses, call record, perform the upgrade. Then, call `accesses` for each address of your protocol. Ensure there are no slots/addresses that unexpectedly changed
 16. Have an audit performed
@@ -90,7 +89,7 @@ You may have millions of dollars at risk already, or will after launch. As such,
 17. Implement audit fixes
 18. Setup monitoring service
   - Have an internal tool that monitors important aspects of your system
-  - Use tools like [Check the Chain](https://github.com/fei-protocol/checkthechain) + [Grafana](https://grafana.com/), or use an off-the-shelf monitoring tool like [Tenderly](https://tenderly.co/alerting) or OpenZeppelin's [Defender Sentinels](https://www.openzeppelin.com/defender).
+  - Use tools like [Check the Chain](https://github.com/checkthechain/checkthechain) + [Grafana](https://grafana.com/), or use an off-the-shelf monitoring tool like [Tenderly](https://tenderly.co/alerting) or OpenZeppelin's [Defender Sentinels](https://www.openzeppelin.com/defender).
 19. Prepare/update your [Incident Response Plan](incident-response-plan-template.md)
 20. Deploy the contract(s)
   - Congrats, you probably just crushed 99% of Solidity devs in terms of a secure development + deployment
