@@ -17,10 +17,10 @@ War Room Participants: **[*Names and contact info*]**
 ## Immediate Steps
 
 - [ ] **Review exploit** transactions to identify vulnerability - **[*Person responsible*]**
-  - Tools used:
-    - [Foundry Transaction Replay Trace/Debugger](https://book.getfoundry.sh/reference/cast/cast-run.html#cast-run)
-    - [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
-    - [ethtx.info](https://ethtx.info)
+    - Tools used:
+        - [Phalcon Tx Explorer](https://explorer.phalcon.xyz/)
+        - [Foundry Transaction Replay Trace/Debugger](https://book.getfoundry.sh/reference/cast/cast-run.html#cast-run)
+        - [Tenderly Debugger](https://dashboard.tenderly.co/tx/mainnet/0xf427afc17bd30a84f4b47dc2eaa176115cf28bdea1110245d3b0948ca3b6595c/debugger)
 - [ ] **Pause contracts** (if possible), take other defensive action, consider offensive action (i.e. whitehat rescues) - **[*Person responsible for coordinating*]**
   - Steps:
     - **[*Who, how, what addresses*]**
@@ -32,9 +32,10 @@ War Room Participants: **[*Names and contact info*]**
   - **[*List of past auditors and their contact info or location of shared channel*]**
     - Your auditors will want to assist to the extent they are able, even if primarily to protect their own reputations
   - DO NOT LET ANYONE OUTSIDE OF YOUR CIRCLE OF TRUST INTO THE WAR ROOM
+  - Even if attackers have successfully exfiltrated funds, do not assume stolen funds are unrecoverable. Immediately reach out to trusted parties including known security professionals or your venture investors for referrals to relevant law enforcement contacts, asset tracking experts, and recovery services.
 - [ ] **Notify users** via relevant Social Media communication channels. Discord: **[*Person responsible*]**, Twitter: **[*Person responsible*]**
   - Update regularly as meaningful new information or developments are available
-    - Even if nothing new is known, updates every 4 to 12 hours will help reassure your community that you are working to address the situation
+    - Even if nothing new is known, updates at least every 24 hours will help reassure your community that you are working to address the situation
     - Run all messages by the vulnerability reviewer(s) to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
 
 ## After Immediate Steps Are Addressed
