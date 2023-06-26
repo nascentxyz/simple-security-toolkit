@@ -32,7 +32,7 @@ War Room Participants: **[*Names and contact info*]**
   - **[*List of past auditors and their contact info or location of shared channel*]**
     - Your auditors will want to assist to the extent they are able, even if primarily to protect their own reputations
   - DO NOT LET ANYONE OUTSIDE OF YOUR CIRCLE OF TRUST INTO THE WAR ROOM
-- [ ] **Notify users** via relevant Social Media communication channels such as Discord, Twitter, Telegram... - **[*Person responsible*]**
+- [ ] **Notify users** via relevant Social Media communication channels. Discord: **[*Person responsible*]**, Twitter: **[*Person responsible*]**
   - Update regularly as meaningful new information or developments are available
     - Even if nothing new is known, updates every 4 to 12 hours will help reassure your community that you are working to address the situation
     - Run all messages by the vulnerability reviewer(s) to ensure no information is shared that inadvertently puts security at risk or commits to specific remediation before all facts are known
