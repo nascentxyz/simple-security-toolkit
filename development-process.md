@@ -35,6 +35,7 @@ You may have millions of dollars at risk already, or will after launch. As such,
   - Include the feature request + specification
 2. Write an initial implementation
   - Get an initial implementation in place
+  - Follow the [Function Requirements-Effects-Interactions-Protocol Invariants (FREI-PI) pattern](https://www.nascent.xyz/idea/youre-writing-require-statements-wrong) for any functions that are entrypoints for users.
   - Document all functions' intended behavior ([NatSpec](https://docs.soliditylang.org/en/develop/natspec-format.html) for public/external functions) and add inline documentation/comments
   - Any use of `unchecked` should include `safety` documentation like:
     ```solidity
