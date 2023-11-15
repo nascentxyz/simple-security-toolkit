@@ -3,6 +3,7 @@
 - [ ]  Have a security contact email displayed prominently in your GitHub `README.md` file. Make sure someone on your team actually receives those emails.
 - [ ]  Make sure your GitHub repo lists the addresses where your contracts are deployed.
 - [ ]  Make sure your UI links to your GitHub repo.
+- [ ]  Ensure that the deployed code includes the patches suggested in the Security Audit. It's possible for code to be deployed before these patches are applied, even after the audit has been conducted.
 - [ ]  Respond to all recommended changes in your draft audit report and have the auditor publish the final version of the report including acknowledgement of your responses.
 - [ ]  If you received a large number of recommended changes to your code during the audit, you should strongly consider getting a second audit after you make the changes, ideally from another auditor. Audits with long lists of issues often indicate that the auditors would have found even more issues given more time.
 - [ ]  [Verify](https://etherscan.io/verifyContract) your contracts on Etherscan. There are automated tools in [Foundry](https://book.getfoundry.sh/forge/deploying.html?highlight=verify#verifying) or [Hardhat](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html) that help verify for you.
